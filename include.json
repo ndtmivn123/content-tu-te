@@ -1,0 +1,18 @@
+{
+    "SETUP": {
+        "index": {
+            "header": [
+                "header/h-2"
+            ],
+            "body": [
+                "breadcrumb/b-4",
+                "banner/b-1",
+                "boxes/b-8",
+                "testimonials/t-1"
+            ],
+            "footer": [
+                "footer/f-10"
+            ]
+        }
+    }
+}
