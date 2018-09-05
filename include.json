@@ -1,6 +1,6 @@
 {
     "SETUP": {
-        "index": {
+        "service": {
             "body": [
                 "breadcrumb/b-1",
                 "gallery/g-1",
