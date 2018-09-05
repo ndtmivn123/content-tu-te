@@ -2,6 +2,8 @@
 .home-2
 	.container
 		background: url(../img/select_item_1.png) no-repeat bottom right
+		+media-breakpoint-down(md)
+			background: none
 		h2
 			+fz(1.5rem)
 			+fw(800)
@@ -81,6 +83,7 @@
 					&:last-child
 						border: 0
 					a
+						white-space: nowrap
 						display: block
 						padding-bottom: 1rem
 						color: color-get($mau,chu)
