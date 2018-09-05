@@ -1,22 +1,9 @@
 {
     "SETUP": {
         "index": {
-            "header": [
-                "header/h-14"
-            ],
             "body": [
-                "banner/b-1",
-                "boxes/b-4",
-                "boxes/b-1",
-                "boxes/b-17",
-                "boxes/home-1",
-                "boxes/home-2",
-                "carousel/c-3",
-                "carousel/c-4"
-            ],
-            "footer": [
-                "footer/f-1",
-                "footer/f-7"
+                "breadcrumb/b-1",
+                "breadcrumb/b-2"
             ]
         }
     }

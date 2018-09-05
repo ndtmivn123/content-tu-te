@@ -2,82 +2,93 @@
 .home-2
 	.container
 		background: url(../img/select_item_1.png) no-repeat bottom right
-	h2
-		+fz(1.5rem)
-		+fw(800)
-		+media-breakpoint-up(md)
-			+fz(2.142857142857143rem)
-	h3
-		text-transform: uppercase
-		+fz(1.2857142857142858rem)
-		color: color-get($mau,main)
-		+fw(bold)
-	.table
-		border-top: 1px solid color-get($mau,border)
-		border-bottom: 1px solid color-get($mau,border)
-		+pad(.5rem 0)
+		h2
+			+fz(1.5rem)
+			+fw(800)
+			+media-breakpoint-up(md)
+				+fz(2.142857142857143rem)
 		h3
-			+fz(1.0714285714285714rem)
-			color: color-get($mau,chu)
+			text-transform: uppercase
+			+fz(1.2857142857142858rem)
+			color: color-get($mau,main)
 			+fw(bold)
 			+mar(0)
-			white-space: nowrap
-			+media-breakpoint-down(md)
-				white-space: normal
-		b
-			color: color-get($mau,main)
-		p
-			+fz(1.0714285714285714rem)
-			+fw(400)
-			+mar(0)
-		.col-6
-			+pad(.5rem 0)
-			display: flex
-			align-items: center
-			b
-				margin-right: 1rem
-				margin-left: .5rem
-	ul.list
-		// list-style: none
-		li
-			position: relative
-			+fz(1.0714285714285714rem)
-			+pad(.5rem 0)
-			// &:before
-			// 	content: ''
-			// 	display: block
-			// 	width: 7px
-			// 	height: 7px
-			// 	background: color-get($mau,list-style)
-			// 	+bor-rad(50%)
-	.chuc
-		h3
-			display: inline-block
-			padding-right: 7rem
-	.vitri
-		background: color-get($mau,trang)
-		h3
-			+fz(1.4285714285714286rem)
-			color: color-get($mau,main)
-			+fw(500)
-		ul.list-group
-			.list-group-item
-				border: 0
-				+bor-rad(0)
-				border-bottom: 1px solid color-get($mau,border)
-				+pad(1rem_ 0_)
-				margin-bottom: 1px
-				&:last-child
-					border: 0
-				a
-					display: block
-					margin-bottom: 1rem
-					color: color-get($mau,chu)
-					transition: .2s all ease-in-out
-					+fz(1.0714285714285714rem)
-					+fw(600)
-					&:hover
-						color: color-get($mau,main)
-				time
-					color: color-get($mau,time)
+		.hh
+			border-top: 1px solid color-get($mau,border)
+			border-bottom: 1px solid color-get($mau,border)
+			+pad(1rem 0)
+			.title
+				+pad(.5rem)
+				i
+					display: flex
+					align-items: center
+					color: color-get($mau,main)
 					+fz(1rem)
+					margin-right: 1rem
+				p
+					+mar(0)
+		.row.nut
+			h4
+				+mar(0)
+				margin-right: .5rem
+			.btn-more
+				display: flex
+				justify-content: center
+				align-items: center
+				background: black
+				padding: .8rem 4.5rem
+				background: white
+				border: 1px solid color-get($mau,border)
+				border-radius: 3rem
+				position: relative
+				i
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+					left: 80%
+					background: color-get($mau,main)
+					color: color-get($mau,trang)
+					padding: 1.4rem
+					border-radius: 50%
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 2rem
+					height: 2rem
+		ul.list
+			margin-right: 20px
+			li
+				position: relative
+				+fz(1.0714285714285714rem)
+				+pad(.5rem 0)
+			&.last
+				li
+					color: color-get($mau,time)
+		.vitri
+			+media-breakpoint-down(sm)
+				background: color-get($mau,trang)
+			h3
+				+fz(1.4285714285714286rem)
+				color: color-get($mau,main)
+				+fw(500)
+			ul.list-group
+				.list-group-item
+					border: 0
+					+bor-rad(0)
+					border-bottom: 1px solid color-get($mau,border)
+					+pad(1rem_ 0_)
+					margin-bottom: 1px
+					&:last-child
+						border: 0
+					a
+						display: block
+						padding-bottom: 1rem
+						color: color-get($mau,chu)
+						transition: .2s all ease-in-out
+						+fz(1.0714285714285714rem)
+						+fw(600)
+						&:hover
+							color: color-get($mau,main)
+					time
+						color: color-get($mau,time)
+						+fz(1rem)

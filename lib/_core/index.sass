@@ -1,9 +1,9 @@
 @import ../_includes
-// @import url('https://fonts.googleapis.com/css?family=Saira:200,400,600,800&amp;subset=vietnamese')
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans:400,600,700,900&subset=vietnamese')
 // +font-face('CenturyGothic', "../fonts/", "CenturyGothic")
 
 html, body
-	font-family: 'Saira', sans-serif
+	font-family: 'Encode Sans', sans-serif
 	font-size: 14px
 	font-weight: 500
 	height: 100%
@@ -14,7 +14,6 @@ html, body
 
 h1, h2, h3, h4, h5, h6
 	font-size: initial
-	font-family: 'Saira', sans-serif!important
 
 a
 	color: color-get($mau,main)
@@ -213,17 +212,5 @@ header
 					+pos(abs, -20px 1.2rem null initial)
 				&:after
 					+pos(abs, -19px 1.2rem null initial)
-#back-to-top.show
-	opacity: 1
-	width: 2rem
-	display: block
-	height: 2rem
-	background: darken(color-get($mau,trang),10%)
-	display: flex
-	transition: .3s all ease-in-out
-	padding: 2rem
-	border-radius: 50%
-	justify-content: center
-	color: color-get($mau,main)
-	align-items: center
+
 
