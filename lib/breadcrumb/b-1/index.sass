@@ -6,28 +6,34 @@
 	min-height: 380px
 	position: relative
 	.title
-		li
-			position: relative
-			a
-				+fz(1.15rem)
-				padding-right: 1.5rem
-				color: color-get($mau,trang)
-			&:after
-				content: "\F142"
-				font: normal normal normal 24px/1 "Material Design Icons"
-				top: 0
-				right: 0
-				font-size: inherit
-				line-height: inherit
-				-webkit-font-smoothing: antialiased
-				display: inline-block
-				color: color-get($mau,trang)
-			&:last-child
+		ul.list-inline
+			+media-breakpoint-down(md)
+				display: none
+			li
+				position: relative
+				
+				a
+					+fz(1.15rem)
+					padding-right: 1.5rem
+					color: color-get($mau,trang)
 				&:after
-					content: none
-			i
-				color: color-get($mau,trang)
+					content: "\F142"
+					font: normal normal normal 24px/1 "Material Design Icons"
+					top: 0
+					right: 0
+					font-size: inherit
+					line-height: inherit
+					-webkit-font-smoothing: antialiased
+					display: inline-block
+					color: color-get($mau,trang)
+				&:last-child
+					&:after
+						content: none
+				i
+					color: color-get($mau,trang)
 		h1
-			font-size: 3rem
+			font-size: 2.7rem
 			color: color-get($mau,trang)
 			font-weight: bold
+			+media-breakpoint-up(md)
+				+fz(3rem)
