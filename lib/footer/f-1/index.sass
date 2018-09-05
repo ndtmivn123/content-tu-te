@@ -1,0 +1,33 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-footer-1
+	background-color: color-get($mau,trang)
+	position: relative
+	z-index: 1
+	color: color-get($mau,den-1)
+	overflow: hidden
+	+media-breakpoint-down(xs)
+	h4
+		text-transform: uppercase
+		color: color-get($mau,den-1)
+		position: relative
+		+fz(1.3rem)
+		margin-bottom: 1.2rem
+		+fw(500)
+
+	.linkfooter
+		padding: 3rem 0 2rem
+		.list-group
+			.list-group-item
+				display: inline-block
+				+bg(none, none, none)
+				border: 0
+				+pad(.5rem 0)
+				+media-breakpoint-up(md)
+					+pad(.15rem 0)
+				a
+					font-size: .9rem
+					+link(color-get($mau,den-1),color-get($mau,main),color-get($mau,main))

@@ -1,0 +1,53 @@
+header.canhcam-header-14
+	.k-menu-bar.container
+		#logo.mr-auto
+		#language
+		button.k-button-toggle.navbar-toggler(k-toggle-for="#demoResAllInOneMenu")
+			i.mdi.mdi-menu
+	#demoResAllInOneMenu.container.k-responsive-menu
+		.k-menu-bar
+			.k-logo.navbar-brand.mr-auto
+				img(src="./img/logo_1.png", alt="")
+			button.k-button-toggle.navbar-toggler(k-toggle-for="#demoResAllInOneMenu")
+				i.mdi.mdi-close
+		.k-logo.navbar-brand(k-menu-map-to="#logo")
+			img(src="./img/logo_1.png", alt="")
+		.mainnav.ml-auto
+			#searchbar
+			ul.advbar(k-menu-map-to="#advbar") 
+				li.d-flex.justify-content-center
+					span.link
+						span.textinfo
+							strong(style="color: black") 19001234
+				li.d-flex.social.justify-content-center
+					a(href="#") 
+						em.fab.fa-facebook-f
+					a(href="#") 
+						em.fab.fa-youtube-square
+					a(href="#") 
+						em.fas.fa-envelope
+				li.d-flex.button
+					a.dk(href="#") Đăng ký
+					a.dn(href="#") Đăng nhập
+			ul.nav
+				li.nav-item.active
+					a.nav-link(href='#')
+						i.fa.fa-home
+				li.nav-item
+					a.nav-link(href='#') Giới thiệu
+				li.nav-item
+					a.nav-link(href='#') Dự án
+				li.nav-item
+					a.nav-link(href='#') Bán/ Cho thuê
+				li.nav-item
+					a.nav-link(href='#') Blog
+				li.nav-item
+					a.nav-link(href='#') Hỗ trợ
+				li.nav-item
+					a.nav-link(href='#') Quy trình cộng tác viên
+				li.nav-item
+					a.nav-link(href='#') liên hệ
+			#advbar
+			#contactinfo
+			#social
+

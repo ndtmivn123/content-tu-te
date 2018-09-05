@@ -1,0 +1,101 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-footer-7
+	position: relative
+	&:before
+		content: ''
+		display: block
+		background: url("../img/home_line.png")
+		top: 0
+		height: 5px
+		left: 0
+		background-position: center center
+		background-size: cover
+
+	.footer-content
+		background: darken(color-get($mau,trang),1%)
+		color: lighten(color-get($mau,trang), 0%)
+		padding: 2rem 0
+		font-weight: 200
+		.footer-nav
+			li
+				padding: 1rem
+				width: 1rem
+				height: 1rem
+				border-radius: 50%
+				background: color-get($mau,main)
+				display: inline-flex
+				justify-content: center
+				align-items: center
+				a
+					color: color-get($mau,trang)
+			.phone
+				color: color-get($mau,den-1)
+				+fw(600)
+				+fz(1.7rem)
+				&:before
+					content: ''
+					width: 25px
+					display: inline-block
+					align-self: center
+					margin-right: .5rem
+					display: inline-block
+					height: 25px
+					background: url('../img/phone.png') no-repeat
+			.nut
+				input.form-control
+					&::placeholder
+						color: darken(color-get($mau,extra),20%)
+				.input-group-append
+					position: relative
+				.btn-send
+					position: absolute
+					top: 0
+					right: 0
+					background: none
+					color: #0099cc
+					font-size: 0.9rem
+					font-weight: 600
+		p
+			color: color-get($mau,den-1)
+			+fw(400)
+		h6
+			font-size: 1.2rem 
+			margin-bottom: 1rem 
+			color: color-get($mau,den-1)
+		.text
+			color: lighten(color-get($mau,den-1),25%)
+			margin-bottom: 1rem
+			+fw(400)
+		.info
+			p
+				margin-bottom: .5rem
+				+fw(400)
+				color: color-get($mau,main)
+				em
+					color: color-get($mau,den-1)
+					+fz(1.5rem)
+	.copy-right
+		font-size: .8rem 
+		padding: .75rem 1rem
+		background: darken(color-get($mau,trang), 90%)
+		color: darken(color-get($mau,trang), 20%)
+	// Khi lên Tablet 
+	+media-breakpoint-up(md)
+		.footer-content
+			padding: 4rem 0
+			.list-group
+				.list-group-item
+					padding: .15rem 0
+			.slogan 
+				.social-list
+					margin: 1rem 0 0 0
+	// Khi lên PC
+	+media-breakpoint-up(lg)
+		.slogan
+			display: flex 
+			.quote
+				padding-left: 2rem

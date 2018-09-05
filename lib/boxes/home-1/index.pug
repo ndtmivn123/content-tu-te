@@ -1,0 +1,28 @@
+section.home-1.pt-5.pb-5
+	.container
+		.row.mb-4
+			.col.text-center
+				h2 Chương trình nổi bật
+		.row.text-center.d-flex.justify-content-center.line.no-gutters
+			ul.list-inline
+				li.list-inline-item
+					a(href="#") Mới nhất
+				li.list-inline-item
+					a(href="#") Mua bán
+				li.list-inline-item
+					a(href="#") Cho Thuê
+		.row.mt-3
+			-for(x=1;x<9;x++)
+				.col-sm-6.col-lg-3.mt-4
+					figure
+						img.img-fluid(src="img/home_news_"+x+".png", alt="alt")
+						figcaption 
+							h3 Một căn hộ được 150 triệu
+							a.link(href="#") Xem thêm -
+		.row.mt-4.mb-5(bg-img="./img/home_banner_1.png")
+			.col.text-center.text-md-left.banner.d-flex.justify-content-around
+				.box
+					h3 Bạn là cộng tác viên?
+					p Tăng doanh số bán hàng cùng an tường real
+				.nut
+					a.btn.btn-primary(href="#") Liên hệ ngay

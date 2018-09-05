@@ -1,0 +1,73 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-carousel-3
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	background: #F5F5F5
+	.owl-carousel
+		position: relative
+		// Main
+		.owl-stage-outer
+			.owl-stage
+				display: flex
+			.owl-item
+				display: flex
+		// Nav
+		// Dots
+	.news-list
+		.item
+			display: flex
+			text-decoration: none
+			height: 100%
+			overflow: hidden
+			figure
+				position: relative
+				overflow: hidden
+				img
+				figcaption
+					+pad(1rem 0)
+					h3
+						+fz(1.3rem)
+						+fw(600)
+						color: #000
+						margin-top: 1rem
+					time
+						+fz(.9rem)
+						+fw(200)
+						color: darken(color-get($mau,trang) ,30%)
+					p
+						margin-top: 1rem
+						color: darken(color-get($mau,trang) ,60%)
+						line-height: 1.3rem
+						+fz(1rem)
+						margin-bottom: 0
+					span
+						+pad(.1rem .5rem)
+						background: color-get($mau,extra)
+						color: color-get($mau,den-1)
+						+bor-rad(5px)
+			&:hover
+				figure
+					img
+						+opacity(.7)
+					figcaption
+						h3
+							color: darken(color-get($mau,extra),0%)
+						time
+							color: darken(color-get($mau,trang) ,20%)
+						p
+							color: darken(color-get($mau,trang) ,70%)
+	.btn-more
+		border-color: #0099CB
+		color: #0099CB
+		+fz(1.3rem)
+		background: transparent
+		+pad(.3rem 2.5rem)
+		&:hover,&:active
+			background: #0099CB
+			color: color-get($mau,trang)
+

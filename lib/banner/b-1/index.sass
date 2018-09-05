@@ -19,23 +19,24 @@
 					min-height: 360px
 				+media-breakpoint-up(lg)
 					min-height: 380px
-				.title
-					+pos(abs, null null 3rem 0)
-					text-align: center
-					width: 100%
-					+pad(0 1rem)
-					h1
-						color: color-get($mau,trang)
-						+text-sha(1px 1px 3px rgba(0,0,0,.4))
-					p
-						color: color-get($mau,trang)
-						+text-sha(2px 2px 3px rgba(0,0,0,.2))
-						+fz(1.5rem)
-						+lh(1.8rem)
-						+fw(300)
-						+media-breakpoint-up(md)
-							max-width: 50%
-							margin: 0 auto 1rem auto
+				h1
+					color: color-get($mau,trang)
+					+text-sha(1px 1px 3px rgba(0,0,0,.4))
+					text-transform: uppercase
+					+fz(1.8rem)
+					+media-breakpoint-up(md)
+						+fz(2rem)
+					+media-breakpoint-up(lg)
+						+fz(2.4rem)
+				p
+					color: color-get($mau,trang)
+					+text-sha(2px 2px 3px rgba(0,0,0,.2))
+					+fz(.9rem)
+					+lh(1.8rem)
+					+media-breakpoint-up(md)
+						+fz(1rem)
+					+media-breakpoint-up(lg)
+						+fz(1.2rem)
 		// Arrow
 		.slick-arrow
 			background: rgba(0,0,0,.3)
@@ -67,24 +68,30 @@
 			+pos(abs, null null 1rem 0)
 			width: 100%
 			li
-				width: .75rem
-				height: .75rem
+				width: 2.2em
+				height: .2rem
+				margin: 0.5rem
 				+mar(.5rem)
+
 				&:focus
 					outline: none
 				button
-					+pad(0)
-					width: .75rem
-					height: .75rem
+					padding: 0
+					width: 2.2rem
+					height: .2rem
+					border-radius: 0
+					background: #ffffff
 					&:before
-						content: '' 
-						background: darken(color-get($mau,trang),5%)
-						+bor-rad(50%)
-						width: .75rem
-						height: .75rem
+						content: ''
+						border-radius: 0
+						width: 2.2rem
+						height: .2rem
 				&.slick-active
 					button
+						background: yellow
 						&:before
-							background: color-get($mau,main)
-
-	
+							content: ''
+							border-radius: 0
+							width: 2.2rem
+							height: .2rem
+		

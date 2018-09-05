@@ -1,0 +1,72 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-boxes-1
+	h3
+		color: color-get($mau,den-1)
+		+fz(2rem)
+		+fw(600)
+		+media-breakpoint-up(md)
+			+fz(2.5rem)
+
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.boxes-details
+		background: color-get($mau,trang)
+		+bor-rad(.35rem)
+		.item
+			+pad(3rem)
+			position: relative
+			&:before
+				content: ''
+				background: url(../img/next.png) no-repeat
+				z-index: 10
+				height: 50px
+				width: 30px
+				transform: rotate(90deg) translateX(-50%) translateY(-50%)
+				position: absolute
+				top: 90%
+				right: 52%
+			&:last-child
+				&:before
+					width: 0
+			+media-breakpoint-up(lg)
+				&:before
+					content: ''
+					background: url(../img/next.png) no-repeat
+					z-index: 10
+					height: 50px
+					width: 30px
+					transform: translateY(-50%)
+					position: absolute
+					top: 50%
+					right: -20px
+			i
+				+fz(4rem)
+				+lh(4rem)
+				+fw(200)
+				margin-right: 1rem
+				color: color-get($mau,main)
+			h3
+				font-weight: 400
+				letter-spacing: 1px
+				+fz(1.3rem)
+				color: black
+				+fw(600)
+			p
+				font-size: 1rem
+				font-weight: 300
+				color: darken(color-get($mau,trang),50%)
+	.btn-more
+		border-color: #0099CB
+		color: #0099CB
+		+fz(1.3rem)
+		background: transparent
+		+pad(.3rem 2.5rem)
+		&:hover,&:active
+			background: #0099CB
+			color: color-get($mau,trang)
+
