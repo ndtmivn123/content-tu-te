@@ -17,18 +17,19 @@
             ]
         },
         "introduce": {
-            "header": [
-                "header/h-2"
-            ],
             "body": [
                 "breadcrumb/b-4",
                 "boxes/b-1",
                 "boxes/b-2",
                 "carousel/c-3",
                 "testimonials/t-1"
-            ],
-            "footer": [
-                "footer/f-10"
+            ]
+        },
+        "news-details": {
+            "body": [
+                "breadcrumb/b-4",
+                "news-details/n-1"
+                
             ]
         }
     }
