@@ -1,0 +1,98 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-gallery-1
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+	+pad(4rem 0)
+	.title
+		h2
+			width: 100%
+			+fz(2.1rem)
+			+fw(700)
+			text-align: center
+			margin-bottom: 3rem
+			
+	.gallery-details
+		.item
+			display: inline
+			text-decoration: none
+			height: 100%
+			+bor-rad(5px)
+			figure
+				box-shadow: 4px 4px 2px color-get($mau,xam-2)
+				position: relative
+				+bor-rad(5px)
+				margin-bottom: 2rem
+				background: darken(color-get($mau,trang) ,3%)
+				&:after
+					content: ''
+					display: block
+					z-index: -1
+					background: rgba(0,0,0,.5)
+					width: 100%
+					height: 100%
+					+pos(abs, 0 0 null null)
+					+bor-rad(5px)
+				.zoom-item
+					+opacity(0)
+					color: color-get($mau,trang)
+					+pos(abs, 50% null null 50%)
+					+transform(translateX(-50%) translateY(-50%))
+					z-index: 10
+					+fz(3rem)
+					+transition(all .2s ease-in-out)
+				.boxzoom
+					overflow: hidden
+					+media-breakpoint-up(sm)
+					min-height: 200px
+					+bor-rad(5px)
+				img
+					// height: 25rem
+
+					width: 100%
+					// +bor-rad(5px)
+					+transition(all .5s ease-in-out)
+				figcaption
+					+pos(abs, null null 10% 50%)
+					transform: translateX(-50%)
+					width: 70%
+					display: flex
+					justify-content: center
+					align-items: center
+					h3
+						text-align: center
+						+fz(1.4rem)
+						+fw(400)
+						color: color-get($mau,trang)
+						margin-bottom: 0
+						
+			&:hover
+				figure
+					&:after
+						z-index: 1
+					img
+						+bor-rad(5px)
+						+transform(scale(1.1))
+					.zoom-item
+						+opacity(1)
+
+	&.canhcam-video-fixed-size.lg-outer
+		padding: 0
+		.lg-inner
+			background-color: #000
+		.lg-sub-html
+			position: absolute
+			text-align: left
+		.lg-toolbar
+			background-color: transparent
+			height: 0
+			.lg-icon
+				color: #FFF
+		.lg-img-wrap
+			padding: 0
+
+.lg-backdrop.in
+	background: rgba(0,0,0,.8)
