@@ -24,7 +24,23 @@
 			outline: none
 	.navbar-brand
 		img
-			max-height: 2rem
+			max-height: 3.7rem
+	.language
+		img
+			+bor-rad(50%)
+		.dropdown
+			.dropdown-menu
+				display: none
+			button
+				background: none
+				&:after
+					display: none
+				&.btn
+					&:focus
+						border: 0
+						box-shadow: 0
+
+
 	&.expand
 		.navbar-toggler
 			background: color-get($mau,main)
@@ -45,7 +61,6 @@
 					+pad(.5rem 1rem)
 	+media-breakpoint-up(lg)
 		.search
-			+pos(abs, 0 0 null null)
 			input
 				border-color: color-get($mau,main)
 				+transition(all .3s ease-in-out)
@@ -54,11 +69,11 @@
 				padding-right: 0
 				+opacity(0)
 			.searchbtn
-				background: darken(color-get($mau,trang),3%) !important
-				color: darken(color-get($mau,main),0%) !important
-				border-color: transparent !important
+				background: transparent
+				color: darken(color-get($mau,search),0%)
 				+bor-rad(50%)
 				padding: .5rem
+				border: 0
 				line-height: 1
 				i
 					width: 20px
@@ -71,3 +86,11 @@
 					width: 200px
 					padding-left: 1rem
 					padding-right: .5rem
+		.navbar-nav
+			.nav-item
+				.nav-link
+					+pad(.5rem 1.5rem)
+					+fz(1.3rem)
+					color: color-get($mau,text-1)
+					&:hover
+						color: color-get($mau,main)

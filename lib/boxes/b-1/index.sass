@@ -1,0 +1,34 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-boxes-1
+	position: relative
+	z-index: 200
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(3rem 0)
+	.container
+		.box
+			// +pad(null 2rem)
+			figure
+				text-align: center
+				margin-bottom: 1rem
+				+media-breakpoint-up(lg)
+					margin-bottom: 3rem
+				.img
+					padding-bottom: 1rem
+					+media-breakpoint-up(lg)
+						padding-bottom: 2rem
+				figcaption
+					h3
+						+fz(1.3rem)
+						+fw(bold)
+						color: color-get($mau,text-1)
+					p
+						color: color-get($mau,text-2)
+						+fw(1.07rem)
+						+pad(.4rem 8rem)
+						+media-breakpoint-up(lg)
+							+pad(.1rem 2rem)

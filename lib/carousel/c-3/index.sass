@@ -1,0 +1,92 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-carousel-3
+	background: color-get($mau,duong-3)
+	+pad(4rem 0)
+	.text-title
+		padding-bottom: 4rem
+		+media-breakpoint-up(lg)
+			padding-bottom: 5rem
+	.owl-carousel
+		position: relative
+		.owl-stage-outer
+			.owl-stage
+				display: flex
+			.owl-item
+				display: flex
+		.owl-nav
+			text-align: center
+			button
+				&.owl-prev, &.owl-next
+					+pad(0 .5rem)
+					width: 3rem
+					height: 3rem
+					+mar(null .5rem)
+					+bor(null, solid lighten(color-get($mau,main),20%),1px)
+					background: none
+					color: color-get($mau,main)
+					text-align: center
+					+fz(1.25rem)
+					&:focus
+						outline: none
+				&.active
+					&.owl-prev, &.owl-next
+						background: color-get($mau,main)
+				&.disabled
+					+opacity(.3)
+				&:hover, &:active
+					color: color-get($mau,trang)
+					background: color-get($mau,main)
+			+media-breakpoint-up(lg)
+				+pos(abs, null 0 calc(100% + 30px) null)
+				button
+					&.owl-prev, &.owl-next
+						border: none
+						+mar(0)
+						width: auto
+						height: auto
+					&.owl-next
+						margin-left: 1rem
+					&:hover
+						background: none
+						color: color-get($mau,main)
+	.news-list
+		.item
+			margin: auto
+			display: flex
+			text-decoration: none
+			height: 100%
+			// +bor-rad(5px)
+			overflow: hidden
+			.picture
+				.hidden
+					+transition(all .5s ease-in-out)
+					+opacity(0)
+					+pos(abs,0 0 null null)
+					// height: 100%
+					width: 100%
+			figure
+				position: relative
+				overflow: hidden
+				margin-bottom: 30px
+				display: flex
+				flex-direction: column
+				figcaption
+					text-align: center
+					padding: 2rem 1rem 0
+					display: flex
+					flex-direction: column
+					height: 100%
+					h3
+						+fz(1.42rem)
+						+fw(bold)
+						color: color-get($mau,text-1)
+					p
+						margin-top: auto
+						color: color-get($mau,text-1)
+						line-height: 1.3rem
+						+fz(1rem)
+						margin-bottom: 0

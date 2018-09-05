@@ -5,9 +5,25 @@
                 "header/h-2"
             ],
             "body": [
+                "slider/s-2",
+                "boxes/b-3",
+                "boxes/b-3",
+                "carousel/c-3",
+                "testimonials/t-1"
+            ],
+            "footer": [
+                "footer/f-10"
+            ]
+        },
+        "introduce": {
+            "header": [
+                "header/h-2"
+            ],
+            "body": [
                 "breadcrumb/b-4",
-                "banner/b-1",
-                "boxes/b-8",
+                "boxes/b-1",
+                "boxes/b-2",
+                "carousel/c-3",
                 "testimonials/t-1"
             ],
             "footer": [

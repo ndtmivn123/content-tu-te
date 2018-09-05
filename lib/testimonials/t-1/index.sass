@@ -7,91 +7,107 @@
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
+	.text-title
+		color: color-get($mau,trang)
 	.testimonial-slider
 		.item
 			text-align: center
 			margin-bottom: 4rem
 			width: 100%
 			img
-				max-width: 90px
-				+bor-rad(50%)
+				max-width: 55px
 				display: inline-block
-				border: 1px solid darken(color-get($mau,trang),5%)
+				+mar(1.5rem)
 			figcaption
 				margin: 0 auto
 				+media-breakpoint-up(lg)
-					max-width: 600px
+					max-width: 760px
 				blockquote
 					font-style: italic
 					margin-top: 1rem
 					position: relative
-					line-height: 1.5rem
+					line-height: 2.2rem
 					display: inline-flex
-					+pad(0 3rem)
-					&:after, &:before
-						content: ''
-						display: inline-block
-						font-family: 'Font Awesome 5 Free'
-						font-weight: 900
-						+fz(3rem)
-						height: 2rem
-						width: 2rem
-						color: darken(color-get($mau,trang),35%)
-					&:before
-						content: "\201C"
-						+pos(abs, 0 null null 1rem)
-					&:after
-						content: "\201D"
-						+pos(abs, null 1rem -1rem null)
+					color: color-get($mau,trang)
+					+fz(1.7rem)
+					+fw(300)
 				.author
-					span
-						display: block
-						color: darken(color-get($mau,trang),35%)
-						+fz(.9rem)
-						margin-top: .5rem
-	.owl-carousel
-		position: relative
-		// Main
-		.owl-stage-outer
-			.owl-stage
-				display: flex
-			.owl-item
-				display: flex
-		// Nav
-		.owl-nav
-			text-align: center
-			button
-				&.owl-prev, &.owl-next
-					+mar(.5rem)
-					+pad(.5rem_)
-					width: 3rem
-					height: 3rem
-					background: darken(color-get($mau,trang),5%)
-					+bor-rad(50%)
-					text-align: center
-					&:focus
+					h5
+						span
+							color: color-get($mau,text-2)
+							+fz(1.14rem)
+					
+		// .owl-carousel
+		// 	position: relative
+		// 	// Main
+		// 	.owl-stage-outer
+		// 		.owl-stage
+		// 			display: flex
+		// 		.owl-item
+		// 			display: flex
+		// 	// Nav
+		// 	.owl-nav
+		// 		text-align: center
+		// 		button
+		// 			&.owl-prev
+		// 				margin: 0
+		// 				top: 50%
+		// 				transform: translateY(-50%)
+		// 				position: absolute
+		// 			&.owl-next
+		// 				// +mar(.5rem)
+		// 				// +pad(.5rem_)
+		// 				// width: 3rem
+		// 				// height: 3rem
+		// 				// background: darken(color-get($mau,trang),5%)
+		// 				// +bor-rad(50%)
+		// 				// text-align: center
+		// 				&:focus
+		// 					outline: none
+		// 			&:hover, &.active
+		// 				&.owl-prev, &.owl-next
+		// 					background: color-get($mau,main)
+		// 					color: color-get($mau,trang)
+		// 			&.disabled
+		// 				+opacity(.5)
+		.owl-carousel
+			.owl-nav
+				margin-top: 30px
+				.owl-prev
+					right: 100%
+				.owl-next
+					left: 100%
+				.owl-prev, .owl-next
+					+mar(0 15px)
+					.mdi
+						+fz(40px)
+						opacity: .3
+						&:before
+							width: 36px
+							height: 36px
+							display: flex
+							justify-content: center
+							align-items: center
+							background: color-rgba(color-get($mau, main), .3)
+							color: color-get($mau, main)
+					&:hover,&:focus
+						background: none
 						outline: none
-				&:hover, &.active
-					&.owl-prev, &.owl-next
-						background: color-get($mau,main)
-						color: color-get($mau,trang)
-				&.disabled
-					+opacity(.5)
-		// Dots
-		.owl-dots
-			+pos(abs, null null 0 0)
-			width: 100%
-			text-align: center
-			.owl-dot
-				+mar(.5rem)
-				&:focus
-					outline: none
-				span
-					background: darken(color-get($mau,trang),5%)
-					width: .7rem
-					height: .7rem
-					display: block
-					+bor-rad(50%)
-				&.active
-					span
-						background: color-get($mau,main)
+				+media-breakpoint-up(lg)
+					width: 100%
+					position: absolute
+					top: 50%
+					height: 0
+					margin-top: 0
+					transform: translateY(-50%)
+					.owl-prev, .owl-next
+						+mar(0)
+						top: 50%
+						transform: translateY(-50%)
+						position: absolute
+						.mdi
+							+fz(55px)
+							&:before
+								background: none
+								color: color-rgba(color-get($mau, main), .3)
+			

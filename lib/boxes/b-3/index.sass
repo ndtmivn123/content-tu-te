@@ -1,0 +1,161 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-boxes-3
+	position: relative
+	z-index: 200
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(3rem 0)
+	.container
+		.box
+			// +pad(null 2rem)
+			figure
+				text-align: center
+				margin-bottom: 1rem
+				+media-breakpoint-up(lg)
+					margin-bottom: 3rem
+				.img
+					padding-bottom: 1rem
+					+media-breakpoint-up(lg)
+						padding-bottom: 2rem
+				figcaption
+					h3
+						+fz(1.3rem)
+						+fw(bold)
+						color: color-get($mau,text-1)
+					p
+						color: color-get($mau,text-2)
+						+fw(1.07rem)
+						+pad(.4rem 8rem)
+						+media-breakpoint-up(lg)
+							+pad(.1rem 3rem)
+
+	// position: relative
+	// z-index: 200
+	.tab-control
+		margin-bottom: 2rem
+		margin-top: -2rem
+		// background: color-get($mau,trang)
+		// +pad(1rem)
+		+media-breakpoint-up(lg)
+			margin-top: -7rem
+		.nav
+			background: color-get($mau,trang)
+			border-radius: 10px
+			+pad(.8rem)
+			display: flex
+			flex-wrap: nowrap
+			h2.text-title
+				+mar(4rem 0 0 0)
+			.tab-col
+				+pad(1rem)
+				text-align: center
+				position: relative
+				text-decoration: none
+				+transition(all .3s ease-in-out)
+				display: block
+				// width: 33.3333%
+				height: 175px
+				+media-breakpoint-up(md)
+					width: 16.666%
+					+pad(0 1rem)
+					height: 206px
+					display: flex
+					align-items: center
+					justify-content: center
+				figure
+					margin-bottom: 0
+					img
+						max-width: 100%
+						// height: 80px
+						+media-breakpoint-up(md)
+							max-width: 100%
+					figcaption
+						h2
+							text-transform: uppercase
+							+fz(1.07rem)
+							color: color-get($mau , trang)
+							+fw(400)
+							margin-top: 1.5rem
+							margin-bottom: 0
+							+media-breakpoint-up(md)
+								+fz(1.29rem)
+				&:before
+					content: ''
+					width: 0
+					height: 0
+					display: block
+					border-style: solid
+					border-width: 0 15px 15px 15px
+					border-color: transparent transparent color-get($mau , trang) transparent
+					+pos(abs, null null 0 50%)
+					+transform(translateX(-50%))
+					opacity: 0
+				&:hover
+					&:before
+						opacity: 1
+				+media-breakpoint-up(lg)
+					&:before
+						display: none
+					&:after
+						content: ''
+						width: 0
+						display: block
+						height: 0
+						border-style: solid
+						+pos(abs,null null -19px 50%)
+						+transform(translateX(-50%) translateY(-10px))
+						border-width: 20px 20px 0 20px
+						opacity: 0
+						+transform()
+						+transition(all .3s ease-in-out)
+					&:hover
+						+transform(translateY(10px))
+						&:after
+							opacity: 1
+							+transform(translateX(-50%) translateY(0))
+				&.col1
+					background: color-get($mau , tab-1)
+					height: 125px
+					+media-breakpoint-up(md)
+						height: 175px
+					&:after
+						border-color: color-get($mau , tab-1) transparent transparent transparent
+				&.col2
+					background: color-get($mau , tab-2)
+					height: 125px
+					+media-breakpoint-up(md)
+						height: 175px
+					&:after
+						border-color: color-get($mau , tab-2) transparent transparent transparent
+				&.col3
+					background: color-get($mau , tab-3)
+					height: 125px
+					+media-breakpoint-up(md)
+						height: 175px
+					&:after
+						border-color: color-get($mau , tab-3) transparent transparent transparent
+				&.col4
+					background: color-get($mau , tab-4)
+					height: 125px
+					+media-breakpoint-up(md)
+						height: 175px
+					&:after
+						border-color: color-get($mau , tab-4) transparent transparent transparent
+				&.col5
+					background: color-get($mau , tab-5)
+					height: 125px
+					+media-breakpoint-up(md)
+						height: 175px
+					&:after
+						border-color: color-get($mau , tab-5) transparent transparent transparent
+				&.col6
+					background: color-get($mau , tab-6)
+					height: 125px
+					+media-breakpoint-up(md)
+						height: 175px
+					&:after
+						border-color: color-get($mau , tab-6) transparent transparent transparent
