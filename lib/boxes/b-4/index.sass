@@ -1,0 +1,30 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-boxes-4
+	position: relative
+	z-index: 200
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.container
+		h2
+			padding-bottom: 3rem
+		.text-box
+			+fw(400)
+			padding-bottom: 1rem
+			padding-top: 1.6rem
+			text-align: center
+			+media-breakpoint-up(lg)
+				text-align: left
+			.title-text
+				+fz(2rem)
+				color: color-get($mau,text-1)
+				padding-bottom: 1rem
+			p
+				color: color-get($mau,text-2)
+				+fz(1.3rem)
+		.btn-wrap
+			padding-bottom: 3rem
