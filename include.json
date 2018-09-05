@@ -1,10 +1,9 @@
 {
     "SETUP": {
-        "service": {
-            "body": [
-                "breadcrumb/b-1",
-                "gallery/g-1",
-                "news/n-3"
+        "index": {
+            "footer": [
+                "footer/f-6",
+                "footer/f-12"
             ]
         }
     }
