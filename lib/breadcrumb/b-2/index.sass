@@ -3,8 +3,10 @@
 	.container
 		background: url(../img/select_item_1.png) no-repeat bottom right
 	h2
-		+fz(2.142857142857143rem)
+		+fz(1.5rem)
 		+fw(800)
+		+media-breakpoint-up(md)
+			+fz(2.142857142857143rem)
 	h3
 		text-transform: uppercase
 		+fz(1.2857142857142858rem)
@@ -27,7 +29,9 @@
 		p
 			+fz(1.0714285714285714rem)
 			+fw(400)
+			+mar(0)
 		.col-6
+			+pad(.5rem 0)
 			display: flex
 			align-items: center
 			b
@@ -51,6 +55,7 @@
 			display: inline-block
 			padding-right: 7rem
 	.vitri
+		background: color-get($mau,trang)
 		h3
 			+fz(1.4285714285714286rem)
 			color: color-get($mau,main)
