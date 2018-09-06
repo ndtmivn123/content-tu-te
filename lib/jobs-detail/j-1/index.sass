@@ -5,11 +5,15 @@
 
 
 .canhcam-jobs-detail-1
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	background: none
+	+media-breakpoint-up(md)
+		background: url(../img/content/jobs-detail/jobs_01.png) no-repeat bottom right
 	.container
 		.content
-			background: url(../img/content/jobs-detail/jobs-01.png) no-repeat bottom right
-			+media-breakpoint-down(md)
-				background: none
+			
 			h2
 				+fz(1.5rem)
 				+fw(700)
@@ -71,10 +75,19 @@
 			ul.list
 				margin-right: 20px
 				padding-left: 1.5rem
+				list-style-type: none
 				li
 					position: relative
 					+fz(1.0714285714285714rem)
-					+pad(.5rem 0)
+					padding-top: .5rem
+					&:before
+						display: inline-block
+						content: ''
+						width: 8px
+						height: 8px
+						background: #c5c5c5
+						border-radius: 50%
+						margin-right: 12px
 				&.last
 					li
 						color: color-get($mau,text-2)

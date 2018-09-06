@@ -42,13 +42,15 @@
         "services-detail": {
             "body": [
                 "breadcrumb/b-4",
-                "services-detail/s-1"
+                "services-detail/s-1",
+                "services-detail/s-2",
+                "services-detail/s-3"
             ]
         },
         "jobs_detail": {
             "body": [
                 "breadcrumb/b-4",
-                "jobs_detail/j-1"
+                "jobs-detail/j-1"
                 
             ]
         },
