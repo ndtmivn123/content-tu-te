@@ -25,6 +25,13 @@
                 "testimonials/t-1"
             ]
         },
+        "job_detail": {
+            "body": [
+                "breadcrumb/b-4",
+                "job_detail/j_d"
+                
+            ]
+        },
         "news-details": {
             "body": [
                 "breadcrumb/b-4",
