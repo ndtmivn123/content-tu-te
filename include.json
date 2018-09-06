@@ -1,35 +1,9 @@
 {
     "SETUP": {
         "index": {
-            "header": [
-                "header/h-2"
-            ],
-            "body": [
-                "slider/s-2",
-                "boxes/b-3",
-                "boxes/b-4",
-                "testimonials/t-2",
-                "carousel/c-5",
-                "carousel/c-4"
-            ],
             "footer": [
-                "footer/f-10"
-            ]
-        },
-        "introduce": {
-            "body": [
-                "breadcrumb/b-4",
-                "boxes/b-1",
-                "boxes/b-2",
-                "carousel/c-3",
-                "testimonials/t-1"
-            ]
-        },
-        "news-details": {
-            "body": [
-                "breadcrumb/b-4",
-                "news-details/n-1"
-                
+                "footer/f-6",
+                "footer/f-12"
             ]
         }
     }

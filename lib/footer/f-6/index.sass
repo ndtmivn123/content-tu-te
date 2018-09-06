@@ -1,0 +1,131 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-footer-6
+	background-color: darken(color-get($mau,trang) ,85%)
+	background-size: contain
+	position: relative
+	z-index: 1
+	overflow: hidden
+	// color: darken(color-get($mau,trang) ,40%)
+	+media-breakpoint-down(xs)
+		text-align: center
+	figure
+		img
+			padding-bottom: 1rem
+		figcaption
+			padding-right: 5rem
+			p 
+				color: color-get($mau, text-footer)
+				font-size: 1.05rem
+			+media-breakpoint-down(sm)
+				padding-right: 0rem
+	h4
+		color: darken(color-get($mau,trang) ,80%)
+		position: relative
+		+fz(1.3rem)
+		+fw(600)
+		padding: .8rem 0 1.8rem 0 
+		+mar(0)
+	.linkfooter
+		padding: 3rem 0
+		+media-breakpoint-up(md)
+			+pad(2.5rem 0 4rem 0)
+		.list-group
+			.list-group-item
+				display: inline-block
+				+bg(none, none, none)
+				border: 0
+				+pad(.5rem 0)
+				+media-breakpoint-up(md)
+					+pad(.15rem 0)
+				a
+					text-decoration: none
+					+fw(400)
+					line-height: 1.6rem
+					+pad(.9rem 0)
+					color: color-get($mau, text-footer)
+					font-size: 1.07rem
+	.footer-button
+		+pad(1.5rem 0)
+		background: color-get($mau, footer-botton)
+		h4,p
+			color: color-get($mau,trang)
+			+pad(0)
+			+mar(0)
+		p
+			padding-top: .6rem
+			+fz(.9rem)
+			+fw(300)
+			line-height: .9rem
+		h4
+			+fw(400)
+		form 
+			.box-input
+				width: 100%
+				border: 1px solid color-get($mau, trang)
+				input
+					background: transparent
+					border: 0
+					&::placeholder
+						color: color-get($mau, trang)
+				.input-group-append
+					button
+						background: transparent
+						border: 0
+						position: relative
+						&:after
+							content: ''
+							display: block
+							width: 1px
+							height: 70%
+							background: color-get($mau, trang)
+							+pos(abs,50% 100% null null)
+							transform: translateY(-50%)
+		.socials
+			a 
+				display: flex
+				text-decoration: none
+				border: 1px solid color-get($mau, trang)
+				width: 2.5rem
+				height: 2.5rem
+				justify-content: center
+				align-items: center
+				border-radius: 50%
+				i 
+					font-size: 1rem
+					color: transparent
+					-webkit-text-stroke: 1px color-get($mau, trang)
+
+	.copyright
+		background: color-get($mau, coppyright)
+		+pad(1rem 0)
+		.text-right
+			font-weight: 400
+			color: darken(color-get($mau,trang) ,60%)
+		.list-group
+			.list-group-item
+				display: inline-block
+				+bg(none, none, none)
+				border: 0
+				+pad(.5rem 0)
+				a
+					text-decoration: none
+					font-size: 1rem
+					font-weight: 400
+					color: darken(color-get($mau,trang) ,60%)
+			+media-breakpoint-up(md)
+				display: flex
+				flex-direction: row
+				.list-group-item
+					+pad(.15rem 0)
+					a
+						margin-right: calc(1rem + 1px)
+						position: relative
+					&:last-child
+						a
+							margin-right: 0
+							&:after
+								content: none

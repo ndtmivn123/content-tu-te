@@ -19,9 +19,6 @@
             "bower_components/offline/offline.min.js",
             "bower_components/lodash/dist/lodash.min.js",
             "bower_components/fancybox/dist/jquery.fancybox.min.js"
-           
-            
-            
         ],
         "css_core": [
             "bower_components/k-responsive-menu/dist/css/k-responsive-menu.min.css",
@@ -29,10 +26,7 @@
             "bower_components/animate.css/animate.css",
             "bower_components/offline/themes/offline-theme-default.css",
             "bower_components/offline/themes/offline-language-english.css",
-            "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-solid.css",
-            "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-regular.css",
-            "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-brands.css",
-            "node_modules/@fortawesome/fontawesome-free-webfonts/css/fontawesome.css",
+            "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
             "bower_components/mdi/css/materialdesignicons.min.css",
             "bower_components/linearicons/dist/web-font/style.css",
             "bower_components/fancybox/dist/jquery.fancybox.min.css"
@@ -49,8 +43,7 @@
             "bower_components/elevatezoom/jquery.elevatezoom.js",
             "bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js",
             "bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js",
-            "bower_components/freewall/freewall.js",
-            "bower_components/aos/dist/aos.js"
+            "bower_components/freewall/freewall.js"
         ],
         "css": [
             "bower_components/select2/dist/css/select2.min.css",
@@ -64,8 +57,7 @@
             "bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css",
             "bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.css",
             "bower_components/owl.carousel/dist/assets/owl.carousel.min.css",
-            "bower_components/owl.carousel/dist/assets/owl.theme.default.css",
-            "bower_components/aos/dist/aos.css"
+            "bower_components/owl.carousel/dist/assets/owl.theme.default.css"
         ]
     }
 }
