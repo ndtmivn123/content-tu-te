@@ -19,7 +19,7 @@
 			border-bottom: 2px solid color-get($mau, main)
 			th
 				border: 0
-				+lh(60px)
+				// +lh(1)
 				+fz(1.28rem)
 				+fw(700)
 				+pad(0)
@@ -27,6 +27,8 @@
 				padding-left: 50px
 				width: 5%
 				font-family: 'Fira Sans', sans-serif
+				+media-breakpoint-up(lg)
+					+lh(60px)
 				&:nth-child(2)
 					width: 50%
 					padding-left: 50px
@@ -52,6 +54,8 @@
 				+fz(1.07rem)
 				text-transform: uppercase
 				+fw(400)
+				&:nth-child(3)
+					text-align: center
 			tr
 				border-bottom: 1px solid color-get($mau, hr)
 				cursor: pointer

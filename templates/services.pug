@@ -1,0 +1,14 @@
+extends _layout/layout.pug
+block variables
+	- var title = "servies"
+	- var description = "Description for servies page"
+	- var bodyclass = "servies"
+	- var href = "/servies.html"
+block header
+	include ../lib/header/h-2/index.pug
+block body
+	include ../lib/breadcrumb/b-4/index.pug
+	include ../lib/services/s-1/index.pug
+	
+block footer
+	include ../lib/footer/f-6/index.pug

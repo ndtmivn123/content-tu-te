@@ -1,0 +1,74 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-form-1
+	+pad(2rem 0)
+	margin-bottom: 3rem
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.info
+		h3
+			+fz(1.7rem)
+			font-weight: 700
+		p
+			font-weight: 600
+			font-size: 1rem
+			margin-bottom: 2.5rem
+	.form-control
+		+pad(.9rem .75rem)
+		background: color-get($mau,trang-2)
+		+placeholder
+			color: color-get($mau,xam-1)
+	.captcha
+		.reload
+			font-size: 2rem
+			margin: auto
+		a
+			text-decoration: none	
+		input
+			margin-top: 1rem
+			width: 100%
+		button
+		+fz(2.5rem)
+		color: color-get($mau,main)
+		.btn-btn-more
+			padding: .8rem 0
+			background: #ff831b
+			border-radius: 3rem
+			margin-top: 1rem
+			color: white
+			width: 100%
+	form
+		.has-danger	
+			input, textarea, select
+				border-color: color-get($mau,do-1)
+	#map-change
+		iframe
+			height: 100%
+			width: 100%
+			min-height: 300px
++media-breakpoint-down(sm)
+	.canhcam-form-2
+		.captcha
+			.btn-btn-more
+				margin-bottom: 2rem
++media-breakpoint-down(sm)
+	.canhcam-form-2
+		.captcha
+			flex-wrap: wrap
+	.input1
+		margin-bottom: 1.5rem 
+	.input2
+		margin-bottom: 1.5rem 
++media-breakpoint-up(lg)
+	.canhcam-form-2
+		background-image: url('../img/lienhe/bg-1.png')
+		background-position: bottom right
+		background-repeat: no-repeat
+		background-position-x: 118%
+		margin-bottom: 3rem
+		.captcha
+			.btn-btn-more
+				margin: 1rem 2rem 0 4rem

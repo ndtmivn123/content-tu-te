@@ -1,0 +1,61 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-services-1
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.title
+		h2
+			width: 100%
+			+fz(2.1rem)
+			+fw(700)
+			text-align: center
+			margin-bottom: 3rem
+	.news-hot
+		figure
+			box-shadow: 5px 5px 2px color-get($mau, xam-3)
+			position: relative
+			margin-bottom: 2rem
+			+bor-rad(5px)
+			&:hover
+				transform: translateY(-15px)
+				transition: .5s all ease-in-out
+			img
+				width: 100%
+			.item
+				display: block
+				// border: 1px solid red
+				// +bor-rad(5px)
+			figcaption
+				width: 70%
+				height: 30%
+				+pos(abs, null null 0% 50%)
+				transform: translateX(-50%)
+				padding: 1rem
+				color: #fff
+				z-index: 1
+				+text-sha(2px 2px 3px rgba(0,0,0,.2))
+				display: flex
+				align-items: center
+				h3
+					width: 100%
+					+mar(0)
+					text-align: center
+					+fz(1.4rem)
+					+fw(400)
+				+media-breakpoint-down(sm)
+					width: 100%
+					h3
+						+fz(1rem)
+				+media-breakpoint-down(xs)
+					h3
+						+fz(1.4rem)
+				
+			&:hover
+				figcaption
+					&:after
+						+opacity(1)
+						height: 100%
