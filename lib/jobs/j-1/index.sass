@@ -4,46 +4,28 @@
 //////////////////////////////////////
 
 .canhcam-jobs-1
-	.container
-		background: color-get($mau, trang)
-		+pad(50px null 30px null)
-		+media-breakpoint-up(lg)
-			+pad(90px null 150px null)
-	.table 
-		thead 
-			background: none
-			color: color-get($mau,text-1)
-			border-bottom: 2px solid color-get($mau, main)
-			th
-				border: 0
-				+lh(60px)
-				+fz(18px)
-				+fw(500)
-				+pad(0)
-				color: color-get($mau, text-1)
-				&:first-child
-					padding-left: 50px
-					width: 50%
-				+ th
-					width: calc(50% / 3)
-					padding-left: 0
-		tbody 
-			td, th 
-				+lh(60px)
-				border: 0
-				+pad(0)
-			th
-				+fz(15px)
-				+fw(400)
-				padding-left: 50px
-			td
-				color: color-get($mau, xam-9)
-			tr
-				border-bottom: 1px solid color-get($mau, xam-8)
-				cursor: pointer
-				&:hover
-					background: color-get($mau, xam-4)
-					box-shadow: 0 3px 10px color-rgba(color-get($mau,den), .2)
-					a
-						text-decoration: none
-						color: color-get($mau, duong-5)
+	position: relative
+	+pad(4rem null)
+	color: color-get($mau, text-1)
+	.title-text
+		+fw(700)
+		+fz(2.15rem)
+		color: color-get($mau,text-1)
+	.about
+		p
+			+fw(500)
+			+fz(1.07rem)
+			color: color-rgba(color-get($mau,text-1),.8)
+	.content
+		padding-left: 1.5rem
+		.text
+			+pad(.5rem 1rem)
+			padding-left: 0
+			display: inline-block
+			border-bottom: 1px solid color-rgba(color-get($mau,trang),.3)
+			p
+				color: color-get($mau, trang)
+				+fw(bold)
+				+fz(2.57rem)
+				+lh(1.1)
+				margin-bottom: .5rem

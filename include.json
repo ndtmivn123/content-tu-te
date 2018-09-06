@@ -35,7 +35,8 @@
         "jobs": {
             "body": [
                 "breadcrumb/b-4",
-                "jobs/j-1"
+                "jobs/j-1",
+                "jobs/j-2"
                 
             ]
         }
