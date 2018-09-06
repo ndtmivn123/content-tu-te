@@ -31,6 +31,13 @@
                 "news-details/n-1"
                 
             ]
+        },
+        "jobs": {
+            "body": [
+                "breadcrumb/b-4",
+                "jobs/j-1"
+                
+            ]
         }
     }
 }
