@@ -83,39 +83,11 @@
 							margin-bottom: 0
 							+media-breakpoint-up(md)
 								+fz(1.29rem)
-				// &:before
-				// 	content: ''
-				// 	width: 0
-				// 	height: 0
-				// 	display: block
-				// 	border-style: solid
-				// 	border-width: 0 15px 15px 15px
-				// 	border-color: transparent transparent color-get($mau , trang) transparent
-				// 	+pos(abs, null null 0 50%)
-				// 	+transform(translateX(-50%))
-				// 	opacity: 0
-				// &:hover
-				// 	&:before
-				// 		opacity: 1
 				+media-breakpoint-up(lg)
-					// &:before
-					// 	display: none
-					// &:after
-					// 	content: ''
-					// 	// width: 0
-					// 	// display: block
-					// 	// height: 0
-					// 	// border-style: solid
-					// 	// +pos(abs,null null -19px 50%)
-					// 	// +transform(translateX(-50%) translateY(-10px))
-					// 	// // border-width: 20px 20px 0 20px
-					// 	// // opacity: 0
-					// 	// // +transform()
-					// 	// // +transition(all .3s ease-in-out)
+					
 					&:hover
 						+transform(translateY(10px))
 						&:after
-							// opacity: 1
 							+transform(translateX(-50%) translateY(0))
 				&.col1
 					background: color-get($mau , tab-1)
