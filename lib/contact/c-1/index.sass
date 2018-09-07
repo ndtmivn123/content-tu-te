@@ -26,6 +26,10 @@
 		+placeholder
 			color: color-get($mau,xam-1)
 	.captcha
+		display: flex
+		flex-wrap: wrap
+		+media-breakpoint-up(md)
+			flex-wrap: nowrap
 		.reload
 			font-size: 2rem
 			margin: auto
@@ -40,7 +44,7 @@
 		.btn-btn-more
 			padding: .8rem 0
 			background: color-get($mau, main)
-			border-radius: 3rem
+			border-radius: 18px
 			margin-top: 1rem
 			color: white
 			width: 100%
@@ -53,26 +57,26 @@
 			height: 100%
 			width: 100%
 			min-height: 300px
-+media-breakpoint-down(sm)
-	.canhcam-form-2
-		.captcha
-			.btn-btn-more
-				margin-bottom: 2rem
-+media-breakpoint-down(sm)
-	.canhcam-form-2
-		.captcha
-			flex-wrap: wrap
-	.input1
-		margin-bottom: 1.5rem 
-	.input2
-		margin-bottom: 1.5rem 
-+media-breakpoint-up(lg)
-	.canhcam-form-2
-		background-image: url('../img/lienhe/bg-1.png')
-		background-position: bottom right
-		background-repeat: no-repeat
-		background-position-x: 118%
-		margin-bottom: 3rem
-		.captcha
-			.btn-btn-more
-				margin: 1rem 2rem 0 4rem
+// +media-breakpoint-down(sm)
+// 	.canhcam-form-2
+// 		.captcha
+// 			.btn-btn-more
+// 				margin-bottom: 2rem
+// +media-breakpoint-down(sm)
+// 	.canhcam-form-2
+// 		.captcha
+// 			flex-wrap: wrap
+// 	.input1
+// 		margin-bottom: 1.5rem 
+// 	.input2
+// 		margin-bottom: 1.5rem 
+// +media-breakpoint-up(lg)
+// 	.canhcam-form-2
+// 		background-image: url('../img/lienhe/bg-1.png')
+// 		background-position: bottom right
+// 		background-repeat: no-repeat
+// 		background-position-x: 118%
+// 		margin-bottom: 3rem
+// 		.captcha
+// 			.btn-btn-more
+// 				margin: 1rem 2rem 0 4rem

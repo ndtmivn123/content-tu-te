@@ -11,14 +11,17 @@
 		+pad(4rem 0)
 	.container
 		h2
-			padding-bottom: 3rem
+			margin-bottom: 0
+			padding-bottom: 1rem
+			+media-breakpoint-up(lg)
+				padding-bottom: 3rem
 		.text-box
 			+fw(400)
-			padding-bottom: 1rem
 			padding-top: 1.6rem
 			text-align: center
 			+media-breakpoint-up(lg)
 				text-align: left
+				padding-bottom: 1rem
 			.title-text
 				+fz(2rem)
 				color: color-get($mau,text-1)
@@ -28,3 +31,6 @@
 				+fz(1.3rem)
 		.btn-wrap
 			padding-bottom: 3rem
+			text-align: center
+			+media-breakpoint-up(lg)
+				text-align: left

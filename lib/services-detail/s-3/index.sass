@@ -17,6 +17,9 @@
 				position: relative
 				.img
 					overflow: hidden
+					+media-breakpoint-up(md)
+						position: relative
+						z-index: 999
 				figcaption
 					color: color-get($mau,text-1)
 					// background: color-get($mau,bg-2)
@@ -32,14 +35,11 @@
 						+bor-rad(50%)
 						overflow: hidden
 						background: color-get($mau,main)
-						top: 54%
+						top: 52%
 						left: 6%
 						+media-breakpoint-up(md)
 							top: 51%
 							left: 5%
-						// @media (max-width: 993px)
-						// 	top: 34%
-						// 	left: 6%
 						+media-breakpoint-up(lg)
 							top: 40%
 							left: 10%
@@ -57,6 +57,9 @@
 						+fz(1.07rem)
 						+fw(700)
 						padding-left: 3rem
+						+media-breakpoint-up(lg)
+							position: relative
+							z-index: 999
 					.text
 						margin-bottom: .5rem
 						display: flex
