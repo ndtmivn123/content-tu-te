@@ -8,10 +8,13 @@
 	margin-bottom: 3rem
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
+	background: none
+	+media-breakpoint-up(md)
+		background: url(../img/content/contact/contact_bg_01.png) no-repeat bottom right
 	.info
 		h3
-			+fz(1.7rem)
-			font-weight: 700
+			text-align: left
+			padding-bottom: .5rem
 		p
 			font-weight: 600
 			font-size: 1rem
@@ -35,7 +38,7 @@
 		color: color-get($mau,main)
 		.btn-btn-more
 			padding: .8rem 0
-			background: #ff831b
+			background: color-get($mau, main)
 			border-radius: 3rem
 			margin-top: 1rem
 			color: white

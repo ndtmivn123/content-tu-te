@@ -1,8 +1,8 @@
 extends _layout/layout.pug
 block variables
-	- var title = "index"
-	- var description = "Description for index page"
-	- var bodyclass = "index"
+	- var title = "introduce"
+	- var description = "Description for introduce page"
+	- var bodyclass = "introduce"
 	- var href = "/introduce.html"
 block header
 	include ../lib/header/h-2/index.pug
@@ -12,5 +12,5 @@ block body
 	include ../lib/boxes/b-2/index.pug
 	include ../lib/carousel/c-3/index.pug
 	include ../lib/testimonials/t-1/index.pug
-//- block footer
-//- 	include ../lib/footer/f-10/index.pug
+block footer
+	include ../lib/footer/f-6/index.pug
