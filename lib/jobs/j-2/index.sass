@@ -39,10 +39,12 @@
 					padding-left: 50px
 		tbody 
 			td, th 
-				+lh(60px)
+				+lh(1.5)
 				border: 0
 				+pad(0)
 				padding-left: 50px
+				+media-breakpoint-up(lg)
+					+lh(60px)
 			th
 				+fz(2.15rem)
 				+fw(400)
@@ -61,10 +63,12 @@
 				cursor: pointer
 				a
 					color: color-get($mau, text-1)
-				&:hover
-					background: color-get($mau, trang)
-					box-shadow: 0 3px 10px color-rgba(color-get($mau,den), .2)
-					a
-						text-decoration: none
-						color: color-get($mau, main)
-						+fw(700)
+					text-decoration: none
+				+media-breakpoint-up(lg)
+					&:hover
+						background: color-get($mau, trang)
+						box-shadow: 0 3px 10px color-rgba(color-get($mau,den), .2)
+						a
+							text-decoration: none
+							color: color-get($mau, main)
+							+fw(700)

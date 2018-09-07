@@ -1,0 +1,48 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-breadcrumb-5
+	+pad(2rem 0)
+	height: 240px
+	+media-breakpoint-up(lg)
+		height: 450px
+	.main-breadcrumb
+		width: 100%
+		display: none
+		+media-breakpoint-up(md)
+			display: block
+			margin-top: 2rem
+		+media-breakpoint-up(lg)
+			margin-top: 6rem
+		.breadcrumb
+			margin-bottom: 0
+			+bor-rad(0)
+			+pad(0)
+			position: relative
+			background: none
+			.breadcrumb-item
+				+pad(.5rem null)
+				position: relative
+				line-height: 1.5rem
+				color: darken(color-get($mau,trang),50%)
+				display: flex
+				align-items: center
+				a
+					color: color-get($mau,trang)
+					+fz(1.14rem)
+					+fw(300)
+				+ .breadcrumb-item
+					&:before
+						color: color-get($mau,text-2)
+						content: '\e876'
+						font-family: 'Linearicons-Free'
+						line-height: 1
+						overflow: hidden
+						+fz(10px)
+		.text
+			+fz(2.93rem)
+			+fw(bold)
+			color: color-get($mau,trang)
+
