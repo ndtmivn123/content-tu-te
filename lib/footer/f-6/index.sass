@@ -12,17 +12,16 @@
 	+pad(rem 0)
 	// color: darken(color-get($mau,trang) ,40%)
 	+media-breakpoint-down(sm)
-		
 		text-align: center
-
 	figure
 		img
-			height: 60px
+			height: 55px
 		figcaption
 			padding-right: 5rem
 			p 
 				color: color-get($mau, text-1)
-				font-size: 1.05rem
+				font-size: 1.07rem
+				+fw(500)
 			+media-breakpoint-down(sm)
 				padding-right: 0rem
 	h4,h5
@@ -34,6 +33,7 @@
 		+mar(0)
 	h5
 		color: color-get($mau, trang)
+		+pad(0)
 	.linkfooter
 		padding: 3rem 0
 		+media-breakpoint-up(md)
@@ -43,16 +43,20 @@
 				display: inline-block
 				+bg(none, none, none)
 				border: 0
-				+pad(.5rem 0)
+				+pad(.2rem 0)
 				+media-breakpoint-up(md)
 					+pad(.15rem 0)
+				+media-breakpoint-up(md)
+					+pad(.3rem 0)
 				a
 					text-decoration: none
-					+fw(400)
+					+fw(500)
 					line-height: 1.6rem
 					+pad(.9rem 0)
-					color: color-get($mau, text-1)
+					color: color-get($mau, text-2)
 					font-size: 1.07rem
+					+media-breakpoint-up(lg)
+
 					&:hover
 						color: color-get($mau,main)
 
@@ -65,7 +69,6 @@
 		color: color-get($mau,trang)
 		p
 			padding-top: .6rem
-			+fz(.9rem)
 			+fw(300)
 			line-height: 1.2rem
 
@@ -108,9 +111,10 @@
 			display: flex
 			justify-content: center
 			align-items: center
-			+media-breakpoint-down(sm)
-				justify-content: center
-				margin-top: .8rem
+			margin-top: .8rem
+			+media-breakpoint-up(lg)
+				margin-top: 0
+				margin-left: 9rem
 			a 
 				display: flex
 				text-decoration: none

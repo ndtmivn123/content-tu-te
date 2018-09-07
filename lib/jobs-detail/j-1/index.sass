@@ -30,6 +30,11 @@
 				border-top: 1px solid color-get($mau,search)
 				border-bottom: 1px solid color-get($mau,search)
 				+pad(1rem 0)
+				.font
+					font-family: 'Fira Sans', sans-serif
+					color: color-get($mau, text-3)
+					+fz(1.07rem)
+					+fw(500)
 				.title
 					align-items: center
 					+pad(.5rem)
@@ -41,23 +46,26 @@
 						margin-right: 1rem
 					p
 						+mar(0)
-			.row.nut
+			.button
 				h4
 					+mar(0)
 					margin-right: .5rem
+					color: color-get($mau, text-3)
+					&:hover
+						color: color-get($mau,main)
+					&.font
+						font-family: 'Fira Sans', sans-serif
 				.btn-more
 					display: flex
 					justify-content: center
 					align-items: center
 					background: black
-					padding: .8rem 4.5rem
+					padding: 1rem 4.5rem
 					background: white
-					border: 1px solid color-get($mau,search)
+					border: 2px solid color-get($mau, hr)
 					border-radius: 3rem
 					color: color-get($mau,text-2)
 					position: relative
-					&:hover
-						color: color-get($mau,main)
 					i
 						position: absolute
 						top: 50%
@@ -70,11 +78,12 @@
 						display: flex
 						justify-content: center
 						align-items: center
+						+fz(1.4rem)
 						width: 2rem
 						height: 2rem
 			ul.list
 				margin-right: 20px
-				padding-left: 1.5rem
+				padding-left: 0
 				list-style-type: none
 				li
 					position: relative
@@ -91,7 +100,7 @@
 				&.last
 					li
 						color: color-get($mau,text-2)
-			.vitri
+			.local
 				+media-breakpoint-down(sm)
 					background: color-get($mau,trang)
 				h3

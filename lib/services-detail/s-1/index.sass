@@ -11,7 +11,14 @@
 		+fw(700)
 		+fz(2.15rem)
 		color: color-get($mau,text-1)
+		+pad(2rem 0 0 0)
+		+media-breakpoint-up(lg)
+			+pad(0)
+			margin-left: -3rem	
 	.about
+		margin-left: 0
+		+media-breakpoint-up(lg)
+			margin-left: -3rem
 		p
 			+fw(500)
 			+fz(1.07rem)
@@ -20,17 +27,5 @@
 			+fz(1.07rem)
 			+fw(600)
 			+lh(1.2)
-			margin-bottom: 1.7rem
-	// .content
-	// 	padding-left: 1.5rem
-	// 	.text
-	// 		+pad(.5rem 1rem)
-	// 		padding-left: 0
-	// 		display: inline-block
-	// 		border-bottom: 1px solid color-rgba(color-get($mau,trang),.3)
-	// 		p
-	// 			color: color-get($mau, trang)
-	// 			+fw(bold)
-	// 			+fz(2.57rem)
-	// 			+lh(1.1)
-	// 			margin-bottom: .5rem
+			margin-bottom: 1rem
+
