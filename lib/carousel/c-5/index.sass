@@ -12,6 +12,34 @@
 		// Main
 		.owl-stage-outer
 		// Nav
+		// .owl-nav
+		// 	button
+		// 		&.owl-prev, &.owl-next
+		// 			+pad(.5rem_)
+		// 			width: 3rem
+		// 			height: 3rem
+		// 			background: none
+		// 			text-align: center
+		// 			color: color-get($mau,text-1)
+		// 			&:focus
+		// 				outline: none
+		// 		&:hover, &.active
+		// 			&.owl-prev, &.owl-next
+		// 				background: none
+		// 				color: color-get($mau,main)
+		// 	+media-breakpoint-up(lg)
+		// 		margin-top: 0
+		// 		button
+		// 			&.owl-prev, &.owl-next
+		// 				display: none
+		// 				margin: 0
+		// 				+transform(translateY(-50%))
+		// 				&:focus
+		// 					outline: none
+		// 			&.owl-prev
+		// 				+pos(abs, 50% null null -4rem)
+		// 			&.owl-next
+		// 				+pos(abs, 50% -4rem null null)
 		.owl-nav
 			button
 				&.owl-prev, &.owl-next
@@ -30,6 +58,7 @@
 			+media-breakpoint-up(lg)
 				margin-top: 0
 				button
+					+fz(1.5rem)
 					&.owl-prev, &.owl-next
 						display: none
 						margin: 0
@@ -37,9 +66,9 @@
 						&:focus
 							outline: none
 					&.owl-prev
-						+pos(abs, 50% null null -4rem)
+						+pos(abs, 30% null null -4rem)
 					&.owl-next
-						+pos(abs, 50% -4rem null null)
+						+pos(abs, 30% -4rem null null)
 		// Dots
 		.owl-dots
 			.owl-dot
