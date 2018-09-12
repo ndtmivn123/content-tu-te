@@ -19,7 +19,7 @@
 		figcaption
 			padding-right: 5rem
 			p 
-				color: color-get($mau, text-1)
+				color: color-get($mau, text-2)
 				font-size: 1.07rem
 				+fw(500)
 			+media-breakpoint-down(sm)
@@ -29,7 +29,7 @@
 		position: relative
 		+fz(1.3rem)
 		+fw(600)
-		+pad(.8rem 0)
+		+pad(1.5rem 0)
 		+mar(0)
 	h5
 		color: color-get($mau, trang)
@@ -46,12 +46,9 @@
 				+pad(.2rem 0)
 				+media-breakpoint-up(md)
 					+pad(.15rem 0)
-				+media-breakpoint-up(md)
-					+pad(.3rem 0)
 				a
 					text-decoration: none
-					+fw(500)
-					line-height: 1.6rem
+					+fw(400)
 					+pad(.9rem 0)
 					color: color-get($mau, text-2)
 					font-size: 1.07rem
@@ -59,6 +56,8 @@
 
 					&:hover
 						color: color-get($mau,main)
+				h4
+
 
 	.footer-button
 		display: flex
@@ -95,7 +94,7 @@
 						border: 0
 						position: relative
 						&:hover
-							background: color-get($mau, text-1)
+							background: color-get($mau, trang)
 							color: color-get($mau, main)
 						&:after
 							content: ''
@@ -125,7 +124,7 @@
 				align-items: center
 				border-radius: 50%
 				&:hover
-					background: color-get($mau,text-2)
+					background: color-get($mau,trang)
 					color: color-get($mau, main)
 					i
 						color: color-get($mau, main)

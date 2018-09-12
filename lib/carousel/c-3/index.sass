@@ -4,7 +4,7 @@
 //////////////////////////////////////
 
 .canhcam-carousel-3
-	background: color-get($mau,duong-3)
+	
 	+pad(4rem 0)
 	.text-title
 		padding-bottom: 4rem
@@ -25,9 +25,9 @@
 					width: 3rem
 					height: 3rem
 					+mar(null .5rem)
-					+bor(null, solid lighten(color-get($mau,main),20%),1px)
+					// +bor(null, solid lighten(color-get($mau,main),20%),1px)
 					background: none
-					color: color-get($mau,main)
+					color: color-get($mau, text-4)
 					text-align: center
 					+fz(1.25rem)
 					&:focus
@@ -35,10 +35,10 @@
 				&.active
 					&.owl-prev, &.owl-next
 						background: color-get($mau,main)
-				&.disabled
-					+opacity(.3)
+				// &.disabled
+				// 	+opacity(.3)
 				&:hover, &:active
-					color: color-get($mau,trang)
+					color: color-get($mau, text-4)
 					background: color-get($mau,main)
 			+media-breakpoint-up(lg)
 				+pos(abs, null 0 calc(100% + 30px) null)
@@ -50,9 +50,35 @@
 						height: auto
 					&.owl-next
 						margin-left: 1rem
-					&:hover
+					&:hover.owl-nav
+			button
+				&.owl-prev, &.owl-next
+					+pad(.5rem_)
+					width: 3rem
+					height: 3rem
+					background: none
+					text-align: center
+					color: color-get($mau,text-4)
+					&:focus
+						outline: none
+				&:hover, &.active
+					&.owl-prev, &.owl-next
 						background: none
 						color: color-get($mau,main)
+			+media-breakpoint-up(lg)
+				margin-top: 0
+				button
+					+fz(1.5rem)
+					&.owl-prev, &.owl-next
+						display: none
+						margin: 0
+						+transform(translateY(-50%))
+						&:focus
+							outline: none
+					&.owl-prev
+						+pos(abs, 30% null null -4rem)
+					&.owl-next
+						+pos(abs, 30% -4rem null null)
 	.news-list
 		.item
 			margin: auto

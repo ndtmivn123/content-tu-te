@@ -7,7 +7,7 @@
 	+pad(2rem 0)
 	margin-bottom: 3rem
 	+media-breakpoint-up(lg)
-		+pad(4rem 0)
+		+pad(0 0 4rem 0)
 	background: none
 	+media-breakpoint-up(md)
 		background: url(../img/content/contact/contact_bg_01.png) no-repeat bottom right
@@ -16,15 +16,17 @@
 		h3
 			text-align: left
 			padding-bottom: .5rem
+			+fz(1.7rem)
 		p
-			font-weight: 600
+			font-weight: 500
 			font-size: 1rem
 			margin-bottom: 2.5rem
+			
 	.form-control
 		+pad(.9rem .75rem)
-		background: color-get($mau,trang-2)
+		background: color-get($mau,trang)
 		+placeholder
-			color: color-get($mau,xam-1)
+			color: color-get($mau,text-1)
 	.captcha
 		display: flex
 		flex-wrap: wrap
@@ -38,9 +40,9 @@
 		input
 			margin-top: 1rem
 			width: 100%
-		button
-		+fz(2.5rem)
-		color: color-get($mau,main)
+		// button
+		// // +fz(2.5rem)
+		// // color: color-get($mau,main)
 		.btn-btn-more
 			padding: .8rem 0
 			background: color-get($mau, main)
@@ -57,26 +59,7 @@
 			height: 100%
 			width: 100%
 			min-height: 300px
-// +media-breakpoint-down(sm)
-// 	.canhcam-form-2
-// 		.captcha
-// 			.btn-btn-more
-// 				margin-bottom: 2rem
-// +media-breakpoint-down(sm)
-// 	.canhcam-form-2
-// 		.captcha
-// 			flex-wrap: wrap
-// 	.input1
-// 		margin-bottom: 1.5rem 
-// 	.input2
-// 		margin-bottom: 1.5rem 
-// +media-breakpoint-up(lg)
-// 	.canhcam-form-2
-// 		background-image: url('../img/lienhe/bg-1.png')
-// 		background-position: bottom right
-// 		background-repeat: no-repeat
-// 		background-position-x: 118%
-// 		margin-bottom: 3rem
-// 		.captcha
-// 			.btn-btn-more
-// 				margin: 1rem 2rem 0 4rem
+	.input
+		padding-bottom: 1.5rem
+		+media-breakpoint-up(lg)
+			padding-bottom: 0

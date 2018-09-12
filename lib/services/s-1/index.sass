@@ -19,10 +19,13 @@
 			box-shadow: 5px 5px 2px color-get($mau, xam-3)
 			position: relative
 			margin-bottom: 2rem
+			transition: .3s all ease-in-out
 			+bor-rad(5px)
 			&:hover
 				transform: translateY(-15px)
-				transition: .5s all ease-in-out
+				box-shadow: none
+				opacity: .8
+				
 			img
 				width: 100%
 			.item

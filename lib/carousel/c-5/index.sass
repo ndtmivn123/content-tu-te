@@ -48,7 +48,9 @@
 					height: 3rem
 					background: none
 					text-align: center
-					color: color-get($mau,text-1)
+					color: color-get($mau,text-4)
+					i
+						+fz(1.5rem)
 					&:focus
 						outline: none
 				&:hover, &.active
@@ -105,9 +107,10 @@
 			figure
 				position: relative
 				overflow: hidden
-				margin-bottom: 30px
 				display: flex
 				flex-direction: column
+				+media-breakpoint-up(lg)
+					margin-bottom: 30px
 				figcaption
 					text-align: center
 					padding: 1rem 1rem

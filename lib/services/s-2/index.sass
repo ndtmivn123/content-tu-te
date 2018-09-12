@@ -3,44 +3,20 @@
 // CODE
 //////////////////////////////////////
 
-.canhcam-boxes-3
+.canhcam-services-2
 	position: relative
-	z-index: 200
 	+pad(2rem 0)
-	+media-breakpoint-up(lg)
-		+pad(3rem 0)
-	.container
-		.box
-			// +pad(null 2rem)
-			figure
-				text-align: center
-				margin-bottom: 1rem
-				+media-breakpoint-up(lg)
-					margin-bottom: 3rem
-				.img
-					padding-bottom: 1rem
-					+media-breakpoint-up(lg)
-						padding-bottom: 2rem
-				figcaption
-					h3
-						+fz(1.3rem)
-						+fw(700)
-						color: color-get($mau,text-1)
-					p
-						color: color-get($mau,text-2)
-						+fz(1.07rem)
-
-						+media-breakpoint-up(lg)
-							+pad(.1rem 2rem)
+	// +media-breakpoint-up(lg)
+	// 	+pad(3rem 0)
 	.tab-all
-		+mar(-6rem 0 4rem 0)
+		+mar(2rem 0)
 		.container
 			.content
 				background: color-get($mau,trang)
 				+pad(1rem 1.5rem 0 1.5rem)
 				+bor-rad(10px)
 				.item
-					+pad(null 5px)
+					+pad(10px null)
 					+transition(all .3s ease-in-out)
 					a
 						color: color-get($mau,trang)
@@ -56,7 +32,7 @@
 									+fz(1.07rem)
 					+media-breakpoint-up(lg)
 						&:hover
-							transform: translateY(-15px)
+							transform: translateY(-10px)
 							opacity: .8
 							a
 								text-decoration: none

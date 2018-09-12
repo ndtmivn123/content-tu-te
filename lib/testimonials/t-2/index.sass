@@ -4,6 +4,7 @@
 //////////////////////////////////////
 
 .canhcam-testimonials-2
+	position: relative
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
@@ -12,12 +13,12 @@
 	.testimonial-slider
 		.item
 			text-align: center
-			margin-bottom: 8rem
+			margin-bottom: 2rem
 			width: 100%
 			img
 				max-width: 55px
 				display: inline-block
-				+mar(1.5rem)
+				+mar(1rem)
 			figcaption
 				margin: 0 auto
 				+media-breakpoint-up(lg)
@@ -28,17 +29,21 @@
 					line-height: 2.2rem
 					display: inline-flex
 					color: color-get($mau,trang)
-					+fz(1.7rem)
+					+fz(1.2rem)
 					+fw(300)
 					+pad(0 1.5rem)
 					+media-breakpoint-up(lg)
 						+pad(null null)
+						+fz(1.5rem)
 				.author
 					h5
 						span
 							color: color-get($mau,text-2)
 							+fz(1.14rem)
-					
+	.img
+		z-index: 99
+		position: absolute
+		right: -65%
 		.owl-carousel
 			position: relative
 			// Main

@@ -33,6 +33,21 @@
 					color: color-get($mau,trang)
 					+fz(1.14rem)
 					+fw(300)
+					letter-spacing: 2px
+					padding: 0.5rem
+					&:after
+						content: '>'
+						display: inline-block
+						position: absolute
+						left: 100%
+						top: 30%
+				&.active
+					padding: 0
+					color: color-get($mau,trang)
+					+fz(1.14rem)
+					+fw(300)
+					letter-spacing: 2px
+					padding: 0.5rem
 				+ .breadcrumb-item
 					&:before
 						color: color-get($mau,text-2)
@@ -41,6 +56,11 @@
 						line-height: 1
 						overflow: hidden
 						+fz(10px)
+				+media-breakpoint-up(lg)
+					&:hover
+						a
+							text-decoration: none
+							color: color-get($mau, main)
 		.text
 			+fz(2.93rem)
 			+fw(bold)
